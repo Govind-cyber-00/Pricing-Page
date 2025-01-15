@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body class="overflow-x-hidden">
+   <!-- Navbar -->
+   <nav class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-gray-800 flex-shrink-0">
+        Career<span class="text-blue-500">Guide</span>.com
+      </a>
+
+      <!-- Navbar Links -->
+      <div class="hidden md:flex space-x-6 text-gray-700">
+        <a href="#" class="hover:text-blue-500">Class 10</a>
+        <a href="#" class="hover:text-blue-500">Class 11-12</a>
+        <a href="#" class="hover:text-blue-500">Counsellors</a>
+        <a href="#" class="hover:text-blue-500">Professionals</a>
+        <a href="#" class="hover:text-blue-500">Study Abroad</a>
+        <a href="#" class="hover:text-blue-500">Psychometric Test</a>
+        <a href="#" class="hover:text-blue-500">Pricing</a>
+        <a href="#" class="hover:text-blue-500">Courses</a>
+        <a href="tel:918800442358" class="text-blue-600 font-semibold">918800442358</a>
+      </div>
+
+      <!-- Sign In & Dashboard -->
+      <div class="hidden md:flex space-x-4 text-gray-700">
+        <a href="#" class="hover:text-blue-500">Sign In</a>
+        <a href="#" class="hover:text-blue-500">My Dashboard</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="block md:hidden text-gray-700">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm">
+      <div class="flex flex-col space-y-2 px-4 py-4 text-gray-700">
+        <a href="#" class="hover:text-blue-500">Class 10</a>
+        <a href="#" class="hover:text-blue-500">Class 11-12</a>
+        <a href="#" class="hover:text-blue-500">Counsellors</a>
+        <a href="#" class="hover:text-blue-500">Professionals</a>
+        <a href="#" class="hover:text-blue-500">Study Abroad</a>
+        <a href="#" class="hover:text-blue-500">Psychometric Test</a>
+        <a href="#" class="hover:text-blue-500">Pricing</a>
+        <a href="#" class="hover:text-blue-500">Courses</a>
+        <a href="tel:918800442358" class="text-blue-600 font-semibold">918800442358</a>
+        <a href="#" class="hover:text-blue-500">Sign In</a>
+        <a href="#" class="hover:text-blue-500">My Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script><header>
+  <div class="w-full py-4 mx-4">
+    <div class="text-center text-2xl sm:text-3xl text-black font-bold">
+      SCIENTIFICALLY PLAN YOUR CAREER
+    </div>
+    <div class="text-center text-lg sm:text-xl text-gray-400 font-bold">
+      FOR SCHOOL/COLLEGE STUDENTS & WORKING PROFESSIONALS
+    </div>
+    <div class="relative">
+      <!-- Responsive Image Float -->
+      <img class="hidden lg:block absolute top-0 right-10 w-48" src="career_page (3).png" alt="career">
+    </div>
+    <div class="w-full text-4xl sm:text-7xl mx-auto text-cyan-400 text-center mt-4">_</div>
+  </div>
+</header>
+<!-- Header ends here -->
+
+<section class="py-4 my-12 px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Pricing Card 1 -->
+    <div class="flex flex-col md:flex-row justify-center gap-6 px-6 py-8 mx-auto place-self-auto border-4 text-center border-cyan-400">
+      <p class="m-4 h-8 text-slate-700 font-bold bg-cyan-400 cursor-pointer hover:text-white text-center">
+        CAREER REPORT
+      </p>
+      <div class="text-3xl md:text-4xl relative text-black line-through text-center">
+        1999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <p class="text-lg md:text-2xl mt-2 text-red-600 font-bold">50% off</p>
+      <div class="w-28 md:w-36 mx-auto text-3xl md:text-5xl rounded-xl mt-4 text-white bg-cyan-400 text-center">
+        999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <ul class="mt-6 space-y-4 text-sm md:text-xs underline decoration-1 underline-offset-4 ">
+        <li class="font-bold text-slate-500 hover:text-cyan-400 cursor-pointer">
+          <i class="fa-solid fa-puzzle-piece"></i> 1 Psychometric Career Test <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-400 cursor-pointer">
+          <i class="fa-solid fa-chart-pie"></i> 1 Psychometric Career Report <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-400 cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK SELF CAREER COUNSELLING
+        </li>
+      </ul>
+      <button class="w-full mt-8 py-2 text-md font-bold text-black bg-white border-2 border-black hover:bg-black hover:text-white">
+        Get started >>
+      </button>
+    </div>
+
+    <!-- Pricing Card 2 -->
+    <div class="px-6 py-8 mx-auto place-self-auto border-4 text-center border-cyan-400">
+      <p class="m-4 h-8 text-slate-700 font-bold bg-cyan-400 cursor-pointer hover:text-white text-center">
+        Recommended Plan
+      </p>
+      <div class="text-3xl md:text-4xl relative text-black line-through text-center">
+        4,999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <p class="text-lg md:text-2xl mt-2 text-red-600 font-bold">20% off</p>
+      <div class="w-28 md:w-36 mx-auto text-3xl md:text-5xl rounded-xl mt-4 text-white bg-cyan-400 text-center">
+        3,999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <ul class="mt-6 space-y-4 text-sm md:text-xs underline decoration-1 underline-offset-4">
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-puzzle-piece"></i> 2 Psychometric Career Tests <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-chart-pie"></i> 2 Psychometric Career Reports <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-play"></i> 1 Video Career Counselling
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-map-location-dot"></i> Personalized Roadmap
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK SELF CAREER COUNSELLING
+        </li>
+        <li class="font-bold text-slate-500 hover:text-cyan-500 cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK NEW AGE CAREERS
+        </li>
+      </ul>
+      <button class="w-full mt-8 py-2 text-md font-bold text-black bg-white border-2 border-black hover:bg-black hover:text-white">
+        Get started >>
+      </button>
+    </div>
+
+    <!-- Pricing Card 3 -->
+    <div class="px-6 py-8 mx-auto place-self-auto border-4 text-center bg-cyan-500 border-cyan-400">
+      <p class="m-4 h-8 w-full bg-white text-slate-700 font-bold hover:text-cyan-500 text-center cursor-pointer">
+        Our Most Popular Career Plan
+      </p>
+      <div class="text-3xl md:text-4xl relative text-black line-through text-center">
+        9,999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <p class="text-lg md:text-2xl mt-2 text-red-600 font-bold">30% off</p>
+      <div class="w-28 md:w-36 mx-auto text-3xl md:text-5xl rounded-xl mt-4 text-cyan-500 bg-white text-center">
+        6,999<sup class="text-sm md:text-xl"><i class="fa-solid fa-indian-rupee-sign"></i></sup>
+      </div>
+      <ul class="mt-6 space-y-4 text-sm md:text-xs underline decoration-1 underline-offset-4">
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-puzzle-piece"></i> 3 Psychometric Career Tests <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-chart-pie"></i> 3 Psychometric Career Reports <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-play"></i> 3 Video Career Counselling Sessions
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK SELF CAREER COUNSELLING
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK NEW AGE CAREERS
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK NEW AGE TECHNOLOGY
+        </li>
+        <li class="font-bold text-slate-500 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-book"></i> E-BOOK DIGITAL CAREER
+        </li>
+      </ul>
+      <button class="w-full mt-8 py-2 text-md font-bold text-black bg-cyan-500 border-2 border-black hover:bg-black hover:text-white">
+        Get started >>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  
+<div class="w-full h-full bg-[#f7f7f7] px-6 sm:px-9 py-16 sm:py-32 flex flex-col lg:flex-row items-center">
+  <div class="lg:mx-12 lg:w-1/2 py-2 lg:-my-20">
+    <img class="w-full" src="img1.jpg" alt="Career Planning Image">
+  </div>
+  <div class="bg-white w-full lg:w-1/2 lg:h-96 mt-8 lg:ml-32 lg:-my-20 text-center text-white font-bold px-4 lg:px-0 py-8">
+    <span class="bg-cyan-500 px-4 py-2 rounded-md inline-block mb-6">
+      SCIENTIFICALLY PLAN YOUR CAREER
+    </span>
+    <h1 class="text-xl sm:text-2xl lg:text-3xl text-black mt-6 hover:text-cyan-500">
+      A Career Counsellor Can Change Your Life
+    </h1>
+    <p class="text-slate-400 mt-6 text-sm sm:text-md px-2 lg:px-16">
+      Investing in Career Guidance & Career counselling helps you understand yourself and your career options better, making it easier to make decisions. It also helps you learn more about the job market, be happier in your career, and succeed in the long run.
+    </p>
+    <button class="w-32 h-10 text-sm font-bold bg-red-800 text-white text-center mt-10 rounded-md">
+      View Pricing
+    </button>
+  </div>
+</div>
+
+<!-- News Section -->
+<div class="w-full h-full px-6 sm:px-9 py-16 sm:py-32 overflow-hidden">
+  <div class="text-2xl sm:text-4xl text-center font-bold mt-8">
+    <h3>We are new in the news</h3>
+  </div>
+  <marquee class="mt-8" behavior="scroll" direction="left">
+    <div class="flex items-center space-x-4 gap-8">
+      <img class=" object-cover" src="img2.jpeg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img6.png" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img3.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img4.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img15.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img11.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img7.png" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img8.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img9.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img10.png" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img21.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img13.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img14.png" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img16.png" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img17.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img18.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img19.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img20.jpeg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img21.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+        <img src="img21.jpg" alt="" width="200" height="50" style="filter: grayscale(1);">
+      <!-- Add more images as needed -->
+    </div>
+  </marquee>
+</div>
+
+
+
+<!-- Testimonial Section -->
+<div class="w-full h-full bg-[#f7f7f7] px-6 sm:px-9 py-16 sm:py-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="relative  md:h-96 bg-cover bg-center" style="background-image: url('image3.jpg');">
+    <!-- Overlay for dark effect (optional) -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  
+    <!-- Play button -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <a href="https://www.youtube.com/watch?v=your-video-id" target="_blank" class="relative">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-10 md:h-10 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.6 10.2c-.2-.8-.8-1.5-1.6-1.7C16.4 8 12 8 12 8s-4.4 0-6 .5c-.8.2-1.4.9-1.6 1.7-.4 1.6-.4 3.8-.4 3.8s0 2.2.4 3.8c.2.8.8 1.5 1.6 1.7 1.6.4 6 .4 6 .4s4.4 0 6-.4c.8-.2 1.4-.9 1.6-1.7.4-1.6.4-3.8.4-3.8s0-2.2-.4-3.8zM9.8 14.7V9.3L14.5 12l-4.7 2.7z" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="bg-white p-6 rounded-md">
+    <h3 class="text-gray-500 text-sm">
+      A special thanks to Surabhi ma'am for her guidance and career clarity. I highly recommend that anyone with confusion regarding their next career steps consult her for better clarity.
+    </h3>
+    <div class="flex items-center mt-8">
+      <img class="w-16 h-16 rounded-full" src="image4.png" alt="Tanishi">
+      <div class="ml-4">
+        <span class="block font-semibold">Tanishi</span>
+        <span class="text-gray-500 text-sm">Graduate Degree/Diploma</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative w-full h-64 md:h-96 bg-cover bg-center" style="background-image: url('image2.jpg');">
+  <!-- Overlay for dark effect (optional) -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Play button -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <a href="https://www.youtube.com/watch?v=your-video-id" target="_blank" class="relative">
+      <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-10 md:h-10 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.6 10.2c-.2-.8-.8-1.5-1.6-1.7C16.4 8 12 8 12 8s-4.4 0-6 .5c-.8.2-1.4.9-1.6 1.7-.4 1.6-.4 3.8-.4 3.8s0 2.2.4 3.8c.2.8.8 1.5 1.6 1.7 1.6.4 6 .4 6 .4s4.4 0 6-.4c.8-.2 1.4-.9 1.6-1.7.4-1.6.4-3.8.4-3.8s0-2.2-.4-3.8zM9.8 14.7V9.3L14.5 12l-4.7 2.7z" />
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
+
+  <div class="bg-white p-6 rounded-md">
+    <h3 class="text-gray-500 text-sm">
+      I am grateful for the session with Ma'am. She was generous and resourceful with her inputs and she also gave her time beyond schedule.
+    </h3>
+    <div class="flex items-center mt-8">
+      <img class="w-16 h-16 rounded-full" src="image6.png" alt="Dinesh Sharma">
+      <div class="ml-4">
+        <span class="block font-semibold">Dinesh Sharma</span>
+        <span class="text-gray-500 text-sm">Working Professional</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-64 md:h-96 bg-cover bg-center" style="background-image: url('image1.jpg');">
+  <!-- Overlay for dark effect (optional) -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Play button -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <a href="https://www.youtube.com/watch?v=your-video-id" target="_blank" class="relative">
+      <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-10 md:h-10 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.6 10.2c-.2-.8-.8-1.5-1.6-1.7C16.4 8 12 8 12 8s-4.4 0-6 .5c-.8.2-1.4.9-1.6 1.7-.4 1.6-.4 3.8-.4 3.8s0 2.2.4 3.8c.2.8.8 1.5 1.6 1.7 1.6.4 6 .4 6 .4s4.4 0 6-.4c.8-.2 1.4-.9 1.6-1.7.4-1.6.4-3.8.4-3.8s0-2.2-.4-3.8zM9.8 14.7V9.3L14.5 12l-4.7 2.7z" />
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
+
+  <div class="bg-white p-6 rounded-md">
+    <h3 class="text-gray-500 text-sm">
+      I found the session very informative regarding what can be done in the field of science other than MBBS and engineering. I am thankful for Ma'am's time and effort to answer everything.
+    </h3>
+    <div class="flex items-center mt-8">
+      <img class="w-16 h-16 rounded-full" src="image5.png" alt="Jeet Nabam">
+      <div class="ml-4">
+        <span class="block font-semibold">Jeet Nabam</span>
+        <span class="text-gray-500 text-sm">12th Class</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <section>
+    <div class="w-full h-full py-1 mx-9 bg-white rounded-lg shadow-md">
+      <div>
+        <h3 class="text-center text-3xl text-black font-bold">FREQUENTLY ASKED QUESTIONS</h3>
+        <p class="text-center text-xl text-gray-400 font-bold">What Users usually ask us.</p>
+      </div>
+
+      <!-- FAQ Items -->
+      <div class="mt-8 space-y-4 ">
+        <!-- FAQ 1 -->
+        <div>
+          <div
+            class="bg-cyan-500 mx-12 mr-28 text-white font-semibold p-4 rounded-lg flex justify-between items-center cursor-pointer"
+            data-faq="1">
+            <span>At what point in my academic or professional journey should I consider career counselling/career
+              guidance?</span>
+            <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+          </div>
+          <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="1">
+            <p>
+              The best time to start career counselling/career guidance is early in your academic journey, especially
+              during
+              your student years - both in school as well as college. Initiating career counselling/career guidance at
+              this
+              stage helps you explore things in an organized way, giving you a clear understanding of your career goals
+              with
+              respect to career selection, entrance exams, college admissions, and higher education.
+            </p>
+            <br>
+            <p>
+              However, we emphasize that career counselling/career guidance is beneficial at any stage of life,
+              especially in
+              the life of working professionals where it can help in charting career growth plans. No matter if you're
+              still
+              in school or done with studies or an experienced working professional, it's always okay to ask for help
+              from
+              experts and make smart choices about your career. We're here to support you at every step of your journey.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div>
+          <div
+            class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+            data-faq="2">
+            <span>How long does it typically take to complete the psychometric career test evaluation and counselling session? Can I record the CareerGuide counselling session?</span>
+            <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+          </div>
+          <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="2">
+            <p>
+              Our psychometric test typically take 40-60 minutes and are recommended to be completed in one go. However, during a psychometric test, if there are glitches or electricity failures, the test automatically saves your progress so you can resume and continue whenever you want. The CareerGuide counselling session takes 40-60 mins. During the career counselling session you can record the full career guidance counselling session, including counsellors' thoughts, suggestions, and guidance.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+
+        <div>
+          <div
+            class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+            data-faq="3">
+            <span>What payment methods are accepted for enrolling in the psychometric tests/ career counselling session ? Can I use alternative options besides credit/debit cards?</span>
+            <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+          </div>
+          <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="3">
+            <p>
+              You can make payment for the psychometric test/career counselling session using various secure and convenient methods. We accept credit/debit cards, bank transfer, net banking, UPI (Google Pay, PhonePe, Paytm, Razorpay), and e-wallets. Additionally, we understand the need for flexibility, so we provide alternative options to ensure you can choose the method that best suits your preferences and convenience.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div>
+        <div
+          class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+          data-faq="4">
+          <span>Do I need to prepare for the CareerGuide psychometric test and CareerGuide counselling? Is parental involvement encouraged in the career counselling/career guidance sessions, or are they exclusively for the students?</span>
+          <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+        </div>
+        <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="4">
+          <p>
+            No, you do not need to prepare before taking the CareerGuide psychometric test or attending CareerGuide counselling. You just need to ensure a stable internet connection and a device with a camera; that's all, the rest is up to us. We strongly believe that parents play a crucial role in helping their children choose a career. Therefore, we encourage parents to join the career counselling/career guidance sessions with their child on our platform. We believe that involving parents improves career guidance. It creates a teamwork environment that helps students make informed decisions about their future.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ 5 -->
+      <div>
+      <div
+        class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+        data-faq="5">
+        <span>Can you provide details about the professionals who will be guiding me through the career planning process?</span>
+        <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+      </div>
+      <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="5">
+        <p>
+          Absolutely! Our team of career experts, who are highly experienced professionals, will guide you through your career journey. They have 12+ years of experience in the career counselling/career guidance industry. Our counsellors are Certified Master Career Guide trained and certified under our founder Surabhi Dewra. Click here to visit their profile.
+        </p>
+      </div>
+      </div>
+         <!-- FAQ 6 -->
+    <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="6">
+      <span>How can I avail face-to-face CareerGuide counselling sessions and the CareerGuide psychometric test?</span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="6">
+      <p>
+        es, you can avail face-to-face counselling sessions and the CareerGuide psychometric test at our Delhi head office without any extra cost. If you are from Delhi NCR, it will also be beneficial for you to take face-to-face counselling sessions and the CareerGuide psychometric test.
+      </p>
+    </div>
+    </div>
+    <!-- FAQ 7 -->
+    <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="7">
+      <span>I'm located outside of India. How can I access your services for career counselling/career guidance?
+      </span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="7">
+      <p>
+        Our career counselling/career guidance services are designed to cater to individuals across the world, regardless of their location. If you're residing outside of India, you can still benefit from our career counselling/career guidance sessions through video chat. These virtual sessions are just as effective as face-to-face interactions, and many individuals opt for them due to the convenience they offer. This ensures that you can receive valuable career counselling/career guidance from the comfort of your own location.
+      </p>
+    </div>
+    </div>
+    <!-- FAQ 8 -->
+  <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="8">
+      <span>How can I avail your services for the CareerGuide psychometric test and CareerGuide counselling?
+      </span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="8">
+      <p>
+        Availing our services is a straightforward process. Simply visit our website or contact our customer support team. Depending on the nature of the service, you may be able to sign up directly online or schedule a consultation. Our platform is designed to be user-friendly, ensuring that you can easily navigate and access the services you need. If you have specific questions or require assistance, feel free to reach out to our support team for personalized guidance on how to proceed.
+      </p>
+    </div>
+    </div>
+    <!-- FAQ 9 -->
+  <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="9">
+      <span>Can I get a chance to have a CareerGuide counselling session with CareerGuide founders?
+      </span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="9">
+      <p>
+        Yes, we offer a special opportunity for passionate and curious individuals to have a CareerGuide counselling session with CareerGuide founders.
+      </p>
+    </div>
+    </div>
+    <!-- FAQ 10 -->
+    <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="10">
+      <span>How do the CareerGuide Psychometric test and CareerGuide counselling session contribute to making informed decisions about my career path?
+      </span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="10">
+      <p>
+        The CareerGuide Psychometric test and CareerGuide counselling session are beneficial for individuals of any age group seeking to discover the most suitable career options. The analysis report and counsellors’ guidance serve as valuable tools to identify and explore potential careers, whether you're just starting your career search or considering a change. By pinpointing your strengths and potential weaknesses, the assessment and counselling session aid in making informed decisions about your career.
+      </p>
+    </div>
+    </div>
+    <!-- FAQ 11 -->
+  <div>
+    <div
+      class="bg-cyan-500 mx-12 text-white font-semibold mr-28 p-4 rounded-lg flex justify-between items-center cursor-pointer"
+      data-faq="11">
+      <span>What is the refund and cancellation policy?</span>
+      <i class="fa-solid fa-sort-down transform transition-transform duration-300" style="color: black;"></i>
+    </div>
+    <div class="hidden mx-12 mt-2 p-4 text-gray-700 leading-relaxed" data-answer="11">
+      <p>
+        ou will be charged as set forth on the payment page. If you are not satisfied with the services we will provide you another counsellor to meet your expectations. You may email regarding your issues to us at customercare@careerguide.com. We want you to be successfull in your career and will initiate necessary steps in appropriate circumstances at our sole discretion.
+      </p>
+    </div>
+    </div>
+
+    <!-- Add more FAQs if needed -->
+    </div>
+    </div>
+
+    <script>
+      // Select all FAQ toggles
+      const faqToggles = document.querySelectorAll("[data-faq]");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const answerId = toggle.getAttribute("data-faq");
+          const answer = document.querySelector(`[data-answer="${answerId}"]`);
+          const icon = toggle.querySelector("i");
+
+          // Toggle the answer visibility and rotate the icon
+          answer.classList.toggle("hidden");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+  </section>
+
+  <!-- FAQ end here -->
+
+
+
+  <!-- student success section -->
+  
+
+  <section class="bg-cyan-500 mt-12 " >
+    <div class="container mx-auto px-4 py-60" style="background-image: url(image7.jpg)">
+      <h2 class="text-3xl text-white font-bold text-center mb-32">Student's Success Stories</h2>
+
+      <div class="relative overflow-hidden">
+        <!-- Slider -->
+        <div id="sliderWrapper" class="flex gap-6 transition-transform duration-700">
+          <!-- Testimonial 1 -->
+          <div class="flex flex-col  flex-shrink-0 items-center bg-gray-50 p-6 rounded-lg shadow-md w-96">
+            <p class="text-center text-gray-700 mb-4">
+              "Me and my dad found selection of streams after 10th very scientific and efficient. Thanks to CareerGuide."
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image9.jpg" alt="Aditi Sharma">
+              <div>
+                <h3 class="font-bold">Aditi Sharma</h3>
+                <p class="text-sm text-teal-600">BBA Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md w-96 flex-shrink-0">
+            <p class="text-center text-gray-700 mb-4">
+              "After Career Guidance, I can wisely employ my skills in Rural Development."
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image13.jpg" alt="Vineet Lamba">
+              <div>
+                <h3 class="font-bold">Vineet Lamba</h3>
+                <p class="text-sm text-teal-600">Rural Development Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md w-96 flex-shrink-0">
+            <p class="text-center text-gray-700 mb-4">
+              "Career Expert provided me career mapping towards future with economics. Today I am an economics student."
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image10.jpg" alt="Prithvi Reddy">
+              <div>
+                <h3 class="font-bold">Prithvi Reddy</h3>
+                <p class="text-sm text-teal-600">Economics Student</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md w-96 flex-shrink-0">
+            <p class="text-center text-gray-700 mb-4">
+              Career Guidance towards food technology made mahima an example for her friends they can now look beyond medicine.
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image11.jpg" alt="MAHIMA BANSAL Reddy">
+              <div>
+                <h3 class="font-bold">MAHIMA  BANSAL</h3>
+                <p class="text-sm text-teal-600">FOOD TECH Student</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md w-96 flex-shrink-0">
+            <p class="text-center text-gray-700 mb-4">
+              Career Guidance made course choice simple and easy, I am happy I could make it to IIM - Indore
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image12.jpg" alt="Gaurav Aggrawal">
+              <div>
+                <h3 class="font-bold">Gaurav Aggrawal</h3>
+                <p class="text-sm text-teal-600">-IIM INDORE</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md w-96 flex-shrink-0">
+            <p class="text-center text-gray-700 mb-4">
+              special thanks to Surabhi ma'am for her guidance and career clarity. I highly
+        recommend that anyone with
+        confusion regarding their next career steps consult her for better clarity.
+            </p>
+            <div class="flex items-center">
+              <img class="w-12 h-12 rounded-full mr-3" src="image4.png" alt="Tanishi">
+              <div>
+                <h3 class="font-bold">TANISHI</h3>
+                <p class="text-sm text-teal-600 uppercase"> Graduate Degree/Diploma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 mt-40">
+          <button class="w-3 h-3 bg-cyan-500 rounded-full" onclick="moveSlide(-1)"></button>
+          <button class="w-3 h-3 bg-gray-400 rounded-full" onclick="moveSlide(1)"></button>
+         
+        </div>
+      </div>
+
+      <div class="text-center mt-6">
+        <button class="px-4 py-2 bg-teal-50 text-gray-400 font-semibold rounded-lg">View all success stories</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <script>
+ let currentSlide = 0;
+
+function moveSlide(direction) {
+  const sliderWrapper = document.getElementById("sliderWrapper");
+  const slides = sliderWrapper.children;
+  const totalSlides = slides.length;
+
+  // Calculate the new slide index
+  currentSlide += direction;
+
+  // Wrap around if out of bounds
+  if (currentSlide < 0) currentSlide = totalSlides - 1;
+  if (currentSlide >= totalSlides) currentSlide = 0;
+
+  // Translate the slider
+  sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+  </script>
+
+
+
+<!-- footer -->
+
+<footer class="w-full bg-[#5c6873] h-full">
+  <div class="bg-cyan-500 ">
+    <h1 class="text-3xl text-center font-bold text-white uppercase ">Unsure which career plan is best for you?</h1>
+    <div class="text-center text-2xl text-white mt-8">
+      <p class="text-2xl ">CALL US ANY TIME!</p>
+       <p><i class="fa-solid fa-phone"></i> +91-8800442358</p>
+       <p><i class="fa-solid fa-envelope"></i> customercare@careerguide.com</p>
+      
+       <img class="float-end my-0 mr-20" src="image14.png" alt="money back">
+      </div>
+     
+  </div>
+
+  <div class="container bg-[#5c6873] py-10 px-4 text-white">
+    <div class="grid grid-cols-1  md:grid-cols-5 gap-6">
+      <!-- About Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">ABOUT</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">News</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Terms</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!-- Psychometric Test Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">PSYCHOMETRIC TEST</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Psychometric Test</a></li>
+          <li><a href="#" class="hover:underline">Ideal Career Test</a></li>
+          <li><a href="#" class="hover:underline">Skill Based Test</a></li>
+          <li><a href="#" class="hover:underline">Commerce Career Selector</a></li>
+          <li><a href="#" class="hover:underline">Humanities Career Selector</a></li>
+        </ul>
+      </div>
+      <!-- Schools Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">SCHOOLS</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Counselling Services For School</a></li>
+          <li><a href="#" class="hover:underline">Career Counselling For 9th</a></li>
+          <li><a href="#" class="hover:underline">Engineering Exams</a></li>
+          <li><a href="#" class="hover:underline">Medical Entrance Exams</a></li>
+        </ul>
+      </div>
+      <!-- Parents Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">PARENTS</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Psychometric Career Tests</a></li>
+          <li><a href="#" class="hover:underline">Study in India</a></li>
+          <li><a href="#" class="hover:underline">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <!-- Social and Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">LET'S BE FRIENDS</h3>
+        <div class="flex space-x-3">
+          <a href="#" class="hover:text-blue-500 text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-blue-300 text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-red-500 text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="hover:text-red-500 text-white"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="mt-4">Contact Us: +91-8800442358</p>
+        <a href="mailto:customercare@careerguide.com" class="hover:underline">customercare@careerguide.com</a>
+        <div class="mt-4">
+          <a href="#" class="inline-block">
+            <img src="image16.jpg" alt="Google Play" class="w-32">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="w-full border-1 border-slate-400">
+<!-- 
+    <div class="mt-10">
+      
+      <div class=" flex md:grid-cols-6 gap-4">
+        <img  src="image15.png" alt="Award 1" class="w-full  ">
+        
+      </div>
+    </div> -->
+
+
+    <div class="container mx-auto flex py-10 px-4">
+      <div class="flex-grow md:grid-cols-3 gap-8 text-white ">
+        <!-- Students Section -->
+        <div class="text-xs">
+          <h3 class="text-lg font-semibold mb-4">STUDENTS</h3>
+          <div>
+            <h3 class="text-lg font-semibold mb-2 mt-10">AWARDS</h3>
+            <div class="mr-40 mb-8 -my-16 gap-4" style="float: right;">
+              <img src="image15.png" alt="Indian Education Awards" class="w-full">
+            
+            </div>
+          </div>
+          <ul class="space-y-2 text-sm">
+           <li><strong>For 9th class:</strong> Skill Based Career Test | Services | Basic Plan | Advance Plan | Face to Face Plan | Mentorship Plan</li>
+            <li><strong>For 10th class:</strong> Stream Selector Test | Ideal Career Test | Services | Basic Plan | Advance Plan | Mentorship Plan</li>
+            <li><strong>For 11th class:</strong> Ideal Career Test | Engineering Branch Selector | Humanities Career Selector</li>
+            <li><strong>For B.Tech:</strong> Ideal Career Test | Professional Skill Index Test | Services | Mentorship Plan</li>
+            <li><strong>For MBA:</strong> Ideal Career Test | Professional Skill Index Test | Mentorship Plan</li>
+            <li><strong>For Working Professionals:</strong> Online Courses | Digital Marketing Courses | Web Development Courses</li>
+          </ul>
+          <p class="mt-4 font-semibold"><a href="#" class="hover:underline">Career Counselling in Delhi, Noida and Gurgaon</a></p>
+          <p class="font-semibold"><a href="#" class="hover:underline">Explore Colleges in India</a></p>
+        </div>
+        
+        <!-- Study Abroad Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">STUDY ABROAD</h3>
+          <p class="text-sm">
+            Study in USA | Study in Europe | Study in UK | Study in Australia | Study in New Zealand | Study in Singapore | Study in Canada | Study in Dubai | Study in Hong Kong | Study in Ireland
+          </p>
+          <p class="mt-4 font-semibold"><a href="#" class="hover:underline">Explore Colleges Abroad</a></p>
+        </div>
+        
+        <!-- Awards Section -->
+      
+      </div>
+    </div>
+      <!-- Bottom Section -->
+      <div class="mt-10 text-center text-xl">
+        <p class="text-gray-400">&copy; CareerGuide.com</p>
+      </div>
+   
+
+  
+</footer>
+
+</body>
+
+</html
